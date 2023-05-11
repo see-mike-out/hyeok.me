@@ -204,3 +204,7 @@ img + p {
 img + h4 {
   margin-top: 1rem;
 }
+
+footer {
+  padding-bottom: 2rem;
+}

@@ -7,3 +7,8 @@
 </header>
 
 <slot />
+
+<footer class="container">
+  <span>&copy; 2023 Hyeok</span>
+</footer>
+
