@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/0.6590f98e.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.a999bf29.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.702c3da6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.110b59ea.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.84325105.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.dbc94d81.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.16cb6b1b.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header class="container"><h1>Hyeok Kim</h1></header>
+
+<div class="container"><p><a href="../">Go back</a></p>
+  <h2>SNU FactCheck</h2>
+  <section class="area"><p>SNU FactCheck is a fact-checking portal where general people request an
+      issue to be fact-checked and professional journalists fact-check it. This
+      service is the first service in Korea that collects factcheck contents
+      from various sources. At first, it started with 7 media outlets, but now
+      there are 27, including the top 3 broadcasting companies (KBS, MBC, and
+      SBS) and the top 2 newspaper companies (Chosun and Jungang). It was our
+      mission to provide an effective visual summary for the factcheck contents
+      from multiple journalists, which are often likely to be too lengthy to
+      read. Therefore, my team suggested FactMeter, a gauge-like object showing
+      the degree of an issue&#39;s factuality. Also, my mission as a front-end
+      developer was to implement the card UI elements responsively to fit
+      various screen types.
+    </p>
+    <p><strong>Period</strong> Jan 2017 - May 2017<br>
+      <strong>My Role</strong> Front-end Developer<br>
+      <strong>Client</strong> SNU Institute for Communication Research
+      (sponsored by Naver)<br>
+      <strong>Director</strong> Prof. Joonhwan Lee<br>
+      <strong>Vice Director</strong> Cindy Oh<br>
+      <strong>Designer</strong> Nahi Hong<br>
+      <strong>Back-end Developer</strong> Jinsu Eun (Ruby on Rails)
+    </p>
+
+    <h3>FactMeter</h3>
+    <img src="images/factcheck/factcheck_factmeter.png" class="clean w600" alt="FactMeter for SNU Fact Check service">
+    <p>The idea of FactMeter was proposed by the director, and the designer
+      visualized this. My job was to make the FactMeter effectively represent
+      the outcome of factcheck (the degree of uncertainty to which a given topic
+      is fact). Basically, the needle of a FactMeter moves along with the
+      issue&#39;s fact-score (1-5). An easier way might be to provide a static
+      FactMeter with the mean of the fact-score. However, the fact-score cannot
+      be pooled because an average score easily ignore how much the factuality
+      of an issue varies. Thus, the needle should represent the distribution of
+      the outcomes, which we chose to animate the outcomes.
+    </p>
+    <p>There was a trade-off: a short period of time enough to present most of
+      the outcomes vs. a long perioud time enough to recognize (at least
+      glimpse) each outcome. This debate might be a common issue when the
+      movement (speed and direction) of an element is actually a visual variable
+      of a visualization. In order to obtain an appropriate speed of the
+      needle&#39;s movement, we tested several spped options with groups of people,
+      and applied the most agreed option to the final system.
+    </p>
+
+    <h3>Variation of Card UI</h3>
+    <img src="images/factcheck/factcheck_card.png" class="clean w600" alt="The card design of SNU Fact Check service">
+    <p>A card-based user interface is often applicable to a system showing a list
+      of many information objects because it flexibly demarcates each piece of
+      information. The cards appear responsively to the screen sizes, enabled by
+      precise and dynamic CSS positioning to match the visual and informational
+      hierarchies.
+    </p>
+
+    <h3>Custom Grid System</h3>
+    <img src="images/factcheck/factcheck_grid.png" class="clean w600" alt="The grid design of SNU Fact Check service">
+    <p>A grid system is pervasive for responsive design, and 12-equal-width grid
+      system is conventional. However, the existing Bootstrap and Materialize
+      are often hard to cusomize, while our service required a more flexible
+      grid system. So, I implemented a custom grid system that fit to our card
+      design.
+    </p></section></div>
+
+<footer class="container"><span>© 2023 Hyeok</span></footer>
+
+
+			
+			<script>
+				{
+					__sveltekit_1yor2kc = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.a999bf29.js"),
+						import("./_app/immutable/entry/app.84325105.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
